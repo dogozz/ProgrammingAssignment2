@@ -50,7 +50,7 @@ cacheSolve <- function(x, ...) {
   data <- x$get()                             ## if the inverse doesn't exist from cache
                                               ## create the matrix
   
-  m <- solve(data, ...)                       ## returns its
+  m <- solve(data, ...)                       ## solve the matrix and returns its inverse
   x$setmatrix(m)
   m
 }
